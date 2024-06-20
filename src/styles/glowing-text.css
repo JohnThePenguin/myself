@@ -1,0 +1,21 @@
+.glow-label {
+  display: inline-block;
+  font-size: 24px; /* Adjust font size as needed */
+  padding: 10px;
+  color: #ffffff; /* Text color */
+  background-color: #636363; /* Background color */
+  border-radius: 5px; /* Rounded corners */
+  animation: glow 2.5s ease-in-out infinite; /* Animation */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #ff8d8d, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Adjust glow effect */
+  }
+  50% {
+    box-shadow: 0 0 20px #a00000, 0 0 30px #ffffff, 0 0 40px #ffffff; /* Adjust glow effect */
+  }
+  100% {
+    box-shadow: 0 0 10px #a0a0a0, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Adjust glow effect */
+  }
+}
