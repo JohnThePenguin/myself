@@ -1,0 +1,9 @@
+.half-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-me{
+    max-height: 80vh;
+}

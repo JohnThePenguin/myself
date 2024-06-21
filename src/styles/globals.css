@@ -17,7 +17,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: "#FFF";
   background: linear-gradient(
       to bottom,
       transparent,
@@ -32,10 +32,31 @@ body {
   }
 }
 
+.mobile-flex {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width: 600px) {
   .mobile-flex {
     flex-direction: column;
   }
+}
+
+.split-2{
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.split-2 > *{
+  flex: 1;
+  display: flex;
+}
+
+.h-scalable{
+  min-height: 100vh;
+  height: auto;
 }
 
 .section-btn{

@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react";
+import { ReactNode } from "react";
 import { ForwardRefComponent, HTMLMotionProps, motion } from 'framer-motion';
 
 export type AnimatedBoxPropsTypeX = {
