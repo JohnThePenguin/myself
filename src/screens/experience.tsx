@@ -1,4 +1,5 @@
 import AnimatedBox from "components/animations/animatedBox";
+import BackToHome from "components/backToHome";
 import AchievedSVG from "components/handwrites/achieved";
 import ExperienceSVG from "components/handwrites/experience";
 import useScrollPosition from "hooks/scrollPosition";
@@ -96,6 +97,7 @@ const Experience = () => {
 
     return (
         <main className="w-screen h-scalable bg-white relative flex overflow-hidden">
+            <BackToHome/>
             <AnimatedBox className="h-screen w-screen p-20 mobile-flex split-2">
                 <div className="half-container h-full overflow-y-hidden">
                     <SectionImage translateY={imageOneY} 

@@ -1,4 +1,5 @@
 import AnimatedBox from "components/animations/animatedBox";
+import BackToHome from "components/backToHome";
 import AncutaSVG from "components/handwrites/ancuta";
 import JanSVG from "components/handwrites/jan";
 import YearsSVG from "components/handwrites/years";
@@ -20,6 +21,7 @@ const About = () => {
     return (
 
         <main className="w-screen h-scalable bg-white relative flex overflow-hidden">
+            <BackToHome/>
             <AnimatedBox className="h-screen w-screen p-20 mobile-flex split-2">
                 <div className="half-container">
                     <img className="image-me image-hover" src="/sunset.jpg"/>

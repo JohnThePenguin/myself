@@ -1,5 +1,7 @@
 import AnimatedBox from "components/animations/animatedBox";
+import BackToHome from "components/backToHome";
 import AchievedSVG from "components/handwrites/achieved";
+import BackSVG from "components/handwrites/back";
 import TodaySVG from "components/handwrites/today";
 import useScrollPosition from "hooks/scrollPosition";
 import useWindowSize from "hooks/windowSize";
@@ -18,6 +20,7 @@ const Today = () => {
     return (
 
         <main className="w-screen h-scalable bg-white relative flex overflow-hidden">
+            <BackToHome/>
             <AnimatedBox className="h-screen w-screen p-20 mobile-flex split-2">
                 <div className="half-container">
                     <img className="image-me image-hover" src="https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg"/>
