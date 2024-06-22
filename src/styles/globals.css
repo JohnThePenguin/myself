@@ -1,7 +1,12 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Tailwind*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*General CSS*/
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,10 +31,16 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.font-1 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .mobile-flex {

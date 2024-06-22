@@ -7,3 +7,43 @@
 .image-me{
     max-height: 80vh;
 }
+
+.text-part{
+    height: 100%;
+    padding-top: 30em;
+    overflow: scroll;
+    overflow-x: visible;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: relative;
+    scrollbar-width: none;
+}
+
+.about-me-text{
+    font-size: large;
+}
+
+.big-label{
+    position: absolute;
+    transition: transform 0.3s ease-out;
+    top: 40px;
+}
+
+.big-label > svg{
+    height: 10em;
+}
+
+.ancuta{
+    left: calc(50vw + 20px)
+}
+
+.jan{
+    left: calc(50vw + 20px + 15em);
+    top: calc(40px + 10em);
+}
+
+.years{
+    right: 8em;
+    top: calc(40px + 4em);
+}
