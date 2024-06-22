@@ -45,9 +45,15 @@ const Experience = () => {
         let minDist = Infinity;
         let minIndex = 0;
         for(let i=0; i<=2; i++){
-            console.log(i, ' -> ', arr[i].current!.getBoundingClientRect().top);
-            if(Math.abs(arr[i].current!.getBoundingClientRect().top - startPosition - 150) <= minDist){
-                minDist = Math.abs(arr[i].current!.getBoundingClientRect().top - startPosition - 150);
+            const sizes = arr[i].current!.getBoundingClientRect();
+            console.log(i, ' -> ', sizes.top);
+
+            // if(sizes.top - startPosition < 0 && sizes.bottom - startPosition > textPartRef.current!.clientHeight/2){
+            //     return;
+            // }
+            
+            if(Math.abs(sizes.top - startPosition - 150) <= minDist){
+                minDist = Math.abs(sizes.top - startPosition - 150);
                 minIndex = i;
             }
         };

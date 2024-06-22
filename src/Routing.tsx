@@ -5,6 +5,7 @@ import About from "screens/about";
 import Achieved from "screens/achieved";
 import Experience from "screens/experience";
 import Home from "screens/home";
+import Today from "screens/today";
 
 const MainRouter = () => {
     const location = useLocation();
@@ -42,6 +43,15 @@ const MainRouter = () => {
                     element={
                         <AnimatedPage>
                             <Experience />
+                        </AnimatedPage>
+                    }
+                />
+
+                <Route
+                    path="today"
+                    element={
+                        <AnimatedPage>
+                            <Today />
                         </AnimatedPage>
                     }
                 />

@@ -32,6 +32,7 @@ const Home = () => {
 
                 <SectionButtonSVG
                     component={<TodaySVG/>}
+                    onClick={()=>{navigate('/today')}}
                 />
 
                 <SectionButtonSVG
