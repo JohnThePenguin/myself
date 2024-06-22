@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 import About from "screens/about";
 import Achieved from "screens/achieved";
+import Experience from "screens/experience";
 import Home from "screens/home";
 
 const MainRouter = () => {
@@ -32,6 +33,15 @@ const MainRouter = () => {
                     element={
                         <AnimatedPage>
                             <Achieved />
+                        </AnimatedPage>
+                    }
+                />
+
+                <Route
+                    path="experience"
+                    element={
+                        <AnimatedPage>
+                            <Experience />
                         </AnimatedPage>
                     }
                 />

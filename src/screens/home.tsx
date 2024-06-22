@@ -27,6 +27,7 @@ const Home = () => {
 
                 <SectionButtonSVG
                     component={<ExperienceSVG/>}
+                    onClick={()=>{navigate('/experience')}}
                 />
 
                 <SectionButtonSVG

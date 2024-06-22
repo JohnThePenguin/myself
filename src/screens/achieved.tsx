@@ -1,8 +1,5 @@
 import AnimatedBox from "components/animations/animatedBox";
 import AchievedSVG from "components/handwrites/achieved";
-import AncutaSVG from "components/handwrites/ancuta";
-import JanSVG from "components/handwrites/jan";
-import YearsSVG from "components/handwrites/years";
 import useScrollPosition from "hooks/scrollPosition";
 import useWindowSize from "hooks/windowSize";
 import { useEffect, useRef, useState } from "react";
@@ -12,7 +9,6 @@ const Achieved = () => {
     const navigate = useNavigate();
     const textPartRef = useRef(null);
     const { scrollY } = useScrollPosition(textPartRef);
-    const { height } = useWindowSize();
 
     useEffect(() => {
         console.log(scrollY);

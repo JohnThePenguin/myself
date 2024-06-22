@@ -5,6 +5,7 @@ import 'styles/globals.css';
 import 'styles/scrollbar.css';
 import 'styles/about.css';
 import 'styles/achieved.css';
+import 'styles/experience.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
