@@ -10,7 +10,6 @@
 
 .text-part{
     height: 100%;
-    padding-top: 30em;
     overflow: scroll;
     overflow-x: visible;
     flex-direction: column;
@@ -21,13 +20,14 @@
 }
 
 .about-me-text{
+    padding-top: 30em;
     font-size: large;
 }
 
 .big-label{
     position: absolute;
     transition: transform 0.3s ease-out;
-    top: 40px;
+    top: 10em;
 }
 
 .big-label > svg{
@@ -40,10 +40,10 @@
 
 .jan{
     left: calc(50vw + 20px + 15em);
-    top: calc(40px + 10em);
+    top: calc(10em + 10em);
 }
 
 .years{
     right: 8em;
-    top: calc(40px + 4em);
+    top: calc(10em + 4em);
 }

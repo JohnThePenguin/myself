@@ -4,7 +4,7 @@ import JanSVG from "components/handwrites/jan";
 import YearsSVG from "components/handwrites/years";
 import useScrollPosition from "hooks/scrollPosition";
 import useWindowSize from "hooks/windowSize";
-import { DetailedHTMLProps, HTMLAttributes, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -12,7 +12,6 @@ const About = () => {
     const textPartRef = useRef(null);
     const { scrollY } = useScrollPosition(textPartRef);
     const { height } = useWindowSize();
-    const [ labelStyle, setLabelStyle ] = useState();
 
     useEffect(() => {
         console.log(scrollY);
@@ -23,7 +22,7 @@ const About = () => {
         <main className="w-screen h-scalable bg-white relative flex overflow-hidden">
             <AnimatedBox className="h-screen w-screen p-20 mobile-flex split-2">
                 <div className="half-container">
-                    <img className="image-me" src="/sunset.jpg"/>
+                    <img className="image-me image-hover" src="/sunset.jpg"/>
                 </div>
                 <div className="half-container text-part" ref={textPartRef}>
                     <div className="about-me-text font-1">
@@ -62,10 +61,3 @@ const About = () => {
 };
 
 export default About;
-
-/*
-
-<p className="hidden" style={{
-position: 'fixed', transform: `translateX(${scrollY}px)`, transition: "transform 0.3s ease-out"
-}}>
-*/
