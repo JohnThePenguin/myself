@@ -5,3 +5,8 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+.animated-image{
+    /* transition: transform 0.3s ease-in; */
+    position: fixed;
+}
