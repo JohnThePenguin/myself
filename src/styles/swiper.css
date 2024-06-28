@@ -1,0 +1,87 @@
+#app {
+  height: 100vh;
+}
+html,
+body {
+  position: relative;
+  height: 100vh;
+}
+
+.svg1{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.svg1 > svg{
+    flex: 1
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100vh;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-back{
+position: fixed;
+width: 100vw;
+height: 100vh;
+
+  padding: 0 20vw;
+}
+
+.swiper-v{
+  background-size: cover;
+  background-origin: content-box;
+  padding: 0 2em;
+}
+
+.svg-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.svg1, .svg2 {
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+.svg1 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.svg2 {
+  right: 50%;
+  transform: translateX(50%);
+}

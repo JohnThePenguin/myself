@@ -8,7 +8,6 @@ import useWindowSize from "hooks/windowSize";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AboutMobile from "./mobile/about";
-import Test from "./mobile/test";
 
 const About = () => {
     const navigate = useNavigate();
@@ -16,7 +15,7 @@ const About = () => {
     const { scrollY } = useScrollPosition(textPartRef);
     const { size: {height}, phoneView } = useWindowSize();
 
-    if(phoneView) return <Test/>;
+    if(phoneView) return <AboutMobile/>;
 
     return (
 
