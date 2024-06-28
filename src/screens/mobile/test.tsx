@@ -8,9 +8,15 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import useWindowSize from 'hooks/windowSize';
+import JanSVG from 'components/handwrites/jan';
+import AncutaSVG from 'components/handwrites/ancuta';
+import YearsSVG from 'components/handwrites/years';
+import FullNameSVG from 'components/handwrites/fullName';
 
 export default function App() {
   const [progress, setProgress] = useState(0);
+  const {size: {height}} = useWindowSize();
   const swiperRef = useRef(null);
 
   const handleSwiper = (swiper: any) => {
@@ -18,8 +24,10 @@ export default function App() {
     console.log(swiper.progress);
   };
   return (
-    <div className='swiper-background'>
+      <div className='swiper-background'>
         <SwiperSlide>
+        <div className='swiper-back'></div>
+
           <Swiper
             mousewheel={true}
             className="mySwiper2 swiper-v"
@@ -30,22 +38,19 @@ export default function App() {
                 swiperRef.current = swiper;
                 swiper.on('progress', handleSwiper);
             }}
-            spaceBetween={50}
+            spaceBetween={height/2}
           >
             <SwiperSlide style={{height: "30vh"}} className='first-slide'>
                 <span className='svg1' style={{
-                    transform: `translateX(calc(-50% - (${progress} / 0.01) * 50%))`,
+                    // transform: `translateX(calc(-50% - (${progress} / 0.01) * 50%))`,
                 }}>
-                    some label
+                    <FullNameSVG/>
                 </span>
                 <div style={{height: "30vh", backgroundColor: 'transparent'}}>
 
                 </div>
             </SwiperSlide>
             <SwiperSlide>Vertical Slide 2</SwiperSlide>
-            <SwiperSlide>Vertical Slide 3</SwiperSlide>
-            <SwiperSlide>Vertical Slide 4</SwiperSlide>
-            <SwiperSlide>Vertical Slide 5</SwiperSlide>
           </Swiper>
         </SwiperSlide>
       <style>
@@ -57,6 +62,18 @@ html,
 body {
   position: relative;
   height: 100vh;
+}
+
+.svg1{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.svg1 > svg{
+    flex: 1
 }
 
 body {
@@ -91,9 +108,22 @@ body {
   object-fit: cover;
 }
 
+.swiper-back{
+position: fixed;
+width: 100vw;
+height: 100vh;
+
+  background: url('/sunset.jpg') no-repeat center center;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 0 20vw;
+}
+
 .swiper-v{
-  background: url('/peak.jpg') no-repeat center center;
+//   background: url('/sunset.jpg') no-repeat center center;
   background-size: cover;
+  background-origin: content-box;
+  padding: 0 2em;
 }
 
 .svg-container {
