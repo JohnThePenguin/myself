@@ -9,7 +9,7 @@ const pageTransition = {
 };
 
 const AnimatedPage = ({ children }: { children: ReactNode }) => {
-    const windowSize = useWindowSize();
+    const {size: windowSize} = useWindowSize();
 
     const [pageVariants, setPageVariants] = useState<Variants>({});
 

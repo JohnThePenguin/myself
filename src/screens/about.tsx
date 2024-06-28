@@ -7,16 +7,16 @@ import useScrollPosition from "hooks/scrollPosition";
 import useWindowSize from "hooks/windowSize";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import AboutMobile from "./mobile/about";
+import Test from "./mobile/test";
 
 const About = () => {
     const navigate = useNavigate();
     const textPartRef = useRef(null);
     const { scrollY } = useScrollPosition(textPartRef);
-    const { height } = useWindowSize();
+    const { size: {height}, phoneView } = useWindowSize();
 
-    useEffect(() => {
-        console.log(scrollY);
-    }, [scrollY]);
+    if(phoneView) return <Test/>;
 
     return (
 

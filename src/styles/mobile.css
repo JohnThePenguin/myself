@@ -1,0 +1,20 @@
+.swipe-view {
+  display: grid;
+  grid-template-rows: repeat(4, 100%);
+  will-change: transform;
+  align-content: center;
+  overflow-y: auto;
+  scroll-snap-coordinate: 0 0;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  height: 80vh;
+  scroll-snap-align: start;
+}
+
+.first-slide{
+    align-items: end;
+}

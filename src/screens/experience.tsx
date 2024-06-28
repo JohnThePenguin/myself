@@ -28,7 +28,7 @@ const Experience = () => {
 
     const textPartRef = useRef<HTMLDivElement>(null);
     const { scrollY } = useScrollPosition(textPartRef);
-    const { width, height } = useWindowSize();
+    const { size: {width, height} } = useWindowSize();
     const sectionOneRef = useRef<HTMLDivElement>(null);
     const sectionTwoRef = useRef<HTMLDivElement>(null);
     const sectionThreeRef = useRef<HTMLDivElement>(null);
