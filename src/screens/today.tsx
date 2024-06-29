@@ -8,15 +8,15 @@ import useScrollPosition from "hooks/scrollPosition";
 import useWindowSize from "hooks/windowSize";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import TodayMobile from "./mobile/today";
 
 const Today = () => {
     const navigate = useNavigate();
     const textPartRef = useRef(null);
     const { scrollY } = useScrollPosition(textPartRef);
+    const { phoneView } = useWindowSize();
 
-    useEffect(() => {
-        console.log(scrollY);
-    }, [scrollY]);
+    if(phoneView) return <TodayMobile/>
 
     return (
 

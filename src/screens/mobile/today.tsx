@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { ReactNode, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,8 +12,12 @@ import useWindowSize from 'hooks/windowSize';
 import FullNameSVG from 'components/handwrites/fullName';
 import AnimatedBox from 'components/animations/animatedBox';
 import { AboutMeContentMobileOne, AboutMeContentMobileTwo } from 'components/contents/about';
+import AText from 'components/animations/animatedText';
+import AchievedSVG from 'components/handwrites/achieved';
+import { AchievedText } from 'components/contents/achieved';
+import { TodayText } from 'components/contents/today';
 
-export default function AboutMobile() {
+export default function TodayMobile() {
   const [progress, setProgress] = useState(0);
   const {size: {height}} = useWindowSize();
   const swiperRef = useRef(null);
@@ -40,18 +44,16 @@ export default function AboutMobile() {
             spaceBetween={height/2.5}
           >
             <SwiperSlide style={{height: "30vh"}} className='first-slide'>
-                {/* transform: `translateX(calc(-50% - (${progress} / 0.01) * 50%))`, */}
               <AnimatedBox className='svg1'>
-                    <FullNameSVG/>
+                    <AchievedSVG/>
               </AnimatedBox>
             </SwiperSlide>
-            <SwiperSlide style={{height: 'auto', overflowY: 'scroll', paddingTop: "3em"}} >
-              <AboutMeContentMobileOne/>
-            </SwiperSlide>
 
-            <SwiperSlide style={{height: 'auto', overflowY: 'scroll', paddingTop: "3em"}} >
-              <AboutMeContentMobileTwo/>
-            </SwiperSlide>
+            {TodayText.map((text, index) =>
+                <SwiperSlide style={{height: "80vh"}} className=''>
+                    <AText d={0}>{text}</AText>
+                </SwiperSlide>
+            )}
           </Swiper>
         </SwiperSlide>
       <style>{`

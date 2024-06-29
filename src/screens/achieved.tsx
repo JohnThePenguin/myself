@@ -6,15 +6,19 @@ import useScrollPosition from "hooks/scrollPosition";
 import useWindowSize from "hooks/windowSize";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import AchievedMobile from "./mobile/achieved";
 
 const Achieved = () => {
     const navigate = useNavigate();
     const textPartRef = useRef(null);
     const { scrollY } = useScrollPosition(textPartRef);
+    const { phoneView } = useWindowSize();
 
     useEffect(() => {
         console.log(scrollY);
     }, [scrollY]);
+
+    if(phoneView) return <AchievedMobile/>
 
     return (
 

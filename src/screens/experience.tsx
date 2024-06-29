@@ -7,6 +7,7 @@ import useScrollPosition from "hooks/scrollPosition";
 import useWindowSize from "hooks/windowSize";
 import { RefObject, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ExperienceMobile from "./mobile/experience";
 
 
 const SectionImage = ({src, translateY} : {src: string, translateY: number}) => {
@@ -29,7 +30,7 @@ const Experience = () => {
 
     const textPartRef = useRef<HTMLDivElement>(null);
     const { scrollY } = useScrollPosition(textPartRef);
-    const { size: {width, height} } = useWindowSize();
+    const { size: {width, height}, phoneView } = useWindowSize();
 
     const sectionOneRef = useRef<HTMLDivElement>(null);
     const sectionTwoRef = useRef<HTMLDivElement>(null);
@@ -103,6 +104,9 @@ const Experience = () => {
             textPartRef.current?.removeEventListener('scrollend', handleTextScroll);
         };
     }, []);
+
+    if(phoneView) return <ExperienceMobile/>;
+
 
     return (
         <main className="w-screen h-scalable bg-white relative flex overflow-hidden">

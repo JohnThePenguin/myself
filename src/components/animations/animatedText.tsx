@@ -9,7 +9,7 @@ const AText = ({ children, d }: { children: ReactNode, d?: number }) => {
     return (
         <p
             ref={ref}
-            className="styled-text"
+            className="styled-text font-1"
             style={{
                 transform: isInView ? "none" : "translateX(-200px)",
                 opacity: isInView ? 1 : 0,
