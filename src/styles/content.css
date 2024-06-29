@@ -19,3 +19,7 @@
     line-height: calc(1ex / 0.32);
     letter-spacing: 2px;
 }
+
+.achieved > .styled-text{
+    font-size: 1em;
+}
