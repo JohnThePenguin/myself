@@ -13,9 +13,8 @@ import FullNameSVG from 'components/handwrites/fullName';
 import AnimatedBox from 'components/animations/animatedBox';
 import { AboutMeContentMobileOne, AboutMeContentMobileTwo } from 'components/contents/about';
 import AText from 'components/animations/animatedText';
-import AchievedSVG from 'components/handwrites/achieved';
-import { AchievedText } from 'components/contents/achieved';
 import { TodayText } from 'components/contents/today';
+import TodaySVG from 'components/handwrites/today';
 
 export default function TodayMobile() {
   const [progress, setProgress] = useState(0);
@@ -45,7 +44,7 @@ export default function TodayMobile() {
           >
             <SwiperSlide style={{height: "30vh"}} className='first-slide'>
               <AnimatedBox className='svg1'>
-                    <AchievedSVG/>
+                    <TodaySVG/>
               </AnimatedBox>
             </SwiperSlide>
 

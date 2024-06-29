@@ -1,0 +1,28 @@
+.project-desc-page {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.swiper-container {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+
+    --swiper-pagination-left: 8px;
+    --swiper-theme-color: black;
+}
+
+.project-title-page {
+    flex-direction: column;
+    row-gap: 30px;
+}

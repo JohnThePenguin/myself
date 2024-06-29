@@ -67,6 +67,8 @@ const Experience = () => {
     };
 
     useEffect(() => {
+        if(phoneView) return;
+
         setImageOneY(
             (sectionOneRef.current!.getBoundingClientRect().top - startPosition) * 3
         );
