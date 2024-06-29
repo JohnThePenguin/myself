@@ -23,3 +23,11 @@
 .achieved > .styled-text{
     font-size: 1em;
 }
+
+.experience-section-header, .experience-section-text{
+    width: 100%;
+}
+
+.experience-section-text > .styled-text {
+    font-size: 1em;
+}
