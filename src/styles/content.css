@@ -1,6 +1,10 @@
 .text-content{
 }
 
+.today{
+    min-height: 50vh;
+}
+
 .about-me.text-content{
     padding: 0 7em;
 }
@@ -21,6 +25,10 @@
 }
 
 .achieved > .styled-text{
+    font-size: 1em;
+}
+
+.today > .styled-text{
     font-size: 1em;
 }
 
