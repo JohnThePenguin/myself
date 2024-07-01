@@ -149,3 +149,13 @@ body {
   50% {transform: translateY(-10px);}
   100% {transform: translateY(0);}
 }
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-child-10vh > p > svg{
+  height: 10vh;
+}

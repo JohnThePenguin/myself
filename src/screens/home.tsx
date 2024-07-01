@@ -37,6 +37,7 @@ const Home = () => {
 
                 <SectionButtonSVG
                     component={<BoringStuffSVG/>}
+                    onClick={()=>{navigate('/boring')}}
                 />
             </div>
         </main>
