@@ -24,11 +24,11 @@
     letter-spacing: 2px;
 }
 
-.achieved > .styled-text{
-    font-size: 1em;
+.svg-height > svg {
+    height: 1.5rem;
 }
 
-.today > .styled-text{
+.achieved > .styled-text, .today > .styled-text{
     font-size: 1em;
 }
 

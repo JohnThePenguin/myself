@@ -14,16 +14,12 @@ import AText from 'components/animations/animatedText';
 import { TodayText } from 'components/contents/today';
 import TodaySVG from 'components/handwrites/today';
 import BackToHome from 'components/backToHome';
+import { NextButton } from './achieved';
 
 export default function TodayMobile() {
-  const [progress, setProgress] = useState(0);
   const {size: {height}} = useWindowSize();
-  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleSwiper = (swiper: any) => {
-    setProgress(swiper.progress);
-    console.log(swiper.progress);
-  };
   return (
       <div className='swiper-background'>
         <BackToHome/>
@@ -36,12 +32,10 @@ export default function TodayMobile() {
             direction={'vertical'}
             slidesPerView="auto"
             speed={500}
-            onSwiper={(swiper: any) => {
-                swiperRef.current = swiper;
-                swiper.on('progress', handleSwiper);
-            }}
             spaceBetween={height/2.5}
+            onSlideChange={(swiper: any) => {setActiveIndex(swiper.activeIndex)}}
           >
+            <NextButton hide={activeIndex == TodayText.length} />
             <SwiperSlide style={{height: "30vh"}} className='first-slide'>
               <AnimatedBox className='svg1'>
                     <TodaySVG/>

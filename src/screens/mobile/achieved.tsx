@@ -1,6 +1,6 @@
-import React, { ReactNode, useRef, useState } from 'react';
+import React, { ReactNode, useEffect, useRef, useState } from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,21 +16,30 @@ import AText from 'components/animations/animatedText';
 import AchievedSVG from 'components/handwrites/achieved';
 import { AchievedText } from 'components/contents/achieved';
 import BackToHome from 'components/backToHome';
+import ArrowDownSVG from 'components/handwrites/arrowDown';
+
+export const NextButton = ({hide} : {hide? : boolean}) => {
+  const swiper = useSwiper();
+
+  return (
+    <div 
+      className="mobile-swiper-next"
+      style={{opacity: `${hide ? 0 : 1}`}}
+      onClick={() => swiper.slideNext()}>
+      <ArrowDownSVG/>
+    </div>
+  )
+};
 
 export default function AchievedMobile() {
-  const [progress, setProgress] = useState(0);
   const {size: {height}} = useWindowSize();
-  const swiperRef = useRef(null);
-
-  const handleSwiper = (swiper: any) => {
-    setProgress(swiper.progress);
-    console.log(swiper.progress);
-  };
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
       <div className='swiper-background'>
         <BackToHome/>
         <SwiperSlide>
+
         <AnimatedBox className='swiper-back'><></></AnimatedBox>
 
           <Swiper
@@ -38,13 +47,12 @@ export default function AchievedMobile() {
             className="mySwiper2 swiper-v"
             direction={'vertical'}
             slidesPerView="auto"
-            speed={500}
-            onSwiper={(swiper: any) => {
-                swiperRef.current = swiper;
-                swiper.on('progress', handleSwiper);
-            }}
+            speed={1000}
             spaceBetween={height/2.5}
+            onSlideChange={(swiper: any) => {setActiveIndex(swiper.activeIndex)}}
           >
+            <NextButton hide={activeIndex == AchievedText.length}/>
+
             <SwiperSlide style={{height: "30vh"}} className='first-slide'>
               <AnimatedBox className='svg1'>
                     <AchievedSVG/>
@@ -57,6 +65,7 @@ export default function AchievedMobile() {
                 </SwiperSlide>
             )}
           </Swiper>
+
         </SwiperSlide>
       <style>{`
         .swiper-back{

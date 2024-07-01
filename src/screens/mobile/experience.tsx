@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 
 
@@ -15,8 +15,19 @@ import AnimatedBox from 'components/animations/animatedBox';
 import AText from 'components/animations/animatedText';
 import { SectionsTexts } from 'components/contents/experience';
 import BackToHome from 'components/backToHome';
+import ArrowForwardSVG from 'components/handwrites/arrowForward';
 
-export default function TodayMobile() {
+const ForwardButton = () => {
+  const swiper = useSwiper();
+
+  return (
+    <div className='svg-height' onClick={() => swiper.slideNext()}>
+      <ArrowForwardSVG/>
+    </div>
+  )
+};
+
+export default function ExperienceMobile() {
   const {size: {height}} = useWindowSize();
   const swiperRef = useRef(null);
 
@@ -47,13 +58,16 @@ export default function TodayMobile() {
                         slidesPerView={1}
                     >
                         <SwiperSlide className='h-full w-full p-2 project-title-page'>
-                            <img src={content.image} style={{maxHeight: "50vh"}}/>
-                            <AText>{content.title}</AText>
+                            <img src={content.image} style={{maxHeight: "30vh", aspectRatio: 0.77, width: 'auto'}}/>
+                            <AText style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                              <p>{content.title}</p>
+                              <ForwardButton/>
+                            </AText>
                         </SwiperSlide>
 
                         <SwiperSlide className='h-full w-full p-2 project-desc-page'>
-                            {content.content.map((text)=>
-                                <AText style={{fontSize: '2vh'}}>{text}</AText>
+                            {content.content.map((text, index)=>
+                                <AText d={(index + 3)/10} style={{fontSize: '2vh'}}>{text}</AText>
                             )}
                         </SwiperSlide>
                     </Swiper>

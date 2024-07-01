@@ -19,6 +19,18 @@
     scrollbar-width: none;
 }
 
+.text-part .smaller{
+    height: calc(100% - 2em);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.text-part > div{
+    position:static;
+    width: 100%;
+}
+
 .about-me-text{
     padding-top: 30em;
     font-size: large;

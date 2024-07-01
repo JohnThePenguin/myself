@@ -58,7 +58,7 @@ export const AboutMeContentMobileTwo = () => {
             <AText>
                 Since last classes of primary school, i have mainly focused on
                 informatics. I love building my own projects, and working on
-                them with my friends.{" "}
+                them with my friends.
             </AText>
             <AText>
                 I have also a lot of experience with algorithmic and competitive

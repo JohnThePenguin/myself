@@ -128,3 +128,24 @@ body {
 .fill-svg > svg{
   height: 100%;
 }
+
+.mobile-swiper-next{
+    position: absolute;
+    bottom: 15vh;
+    z-index: 10;
+    width: calc(100vw - 4em);
+    display: flex;
+    justify-content: center;
+    transition: 200ms;
+}
+
+.mobile-swiper-next > svg {
+  height: 1rem;
+  animation: up-and-down 2s ease-in-out 0s infinite;
+}
+
+@keyframes up-and-down {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}

@@ -13,16 +13,12 @@ import FullNameSVG from 'components/handwrites/fullName';
 import AnimatedBox from 'components/animations/animatedBox';
 import { AboutMeContentMobileOne, AboutMeContentMobileTwo } from 'components/contents/about';
 import BackToHome from 'components/backToHome';
+import { NextButton } from './achieved';
 
 export default function AboutMobile() {
-  const [progress, setProgress] = useState(0);
   const {size: {height}} = useWindowSize();
-  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleSwiper = (swiper: any) => {
-    setProgress(swiper.progress);
-    console.log(swiper.progress);
-  };
   return (
       <div className='swiper-background'>
         <BackToHome/>
@@ -35,12 +31,10 @@ export default function AboutMobile() {
             direction={'vertical'}
             slidesPerView="auto"
             speed={500}
-            onSwiper={(swiper: any) => {
-                swiperRef.current = swiper;
-                swiper.on('progress', handleSwiper);
-            }}
             spaceBetween={height/2.5}
+            onSlideChange={(swiper: any) => {setActiveIndex(swiper.activeIndex)}}
           >
+            <NextButton hide={(activeIndex == 0 || activeIndex == 2)}/>
             <SwiperSlide style={{height: "30vh"}} className='first-slide'>
                 {/* transform: `translateX(calc(-50% - (${progress} / 0.01) * 50%))`, */}
               <AnimatedBox className='svg1'>

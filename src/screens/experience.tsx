@@ -113,8 +113,8 @@ const Experience = () => {
     return (
         <main className="w-screen h-scalable bg-white relative flex overflow-hidden">
             <BackToHome/>
-            <AnimatedBox className="h-screen w-screen p-20 mobile-flex split-2">
-                <div className="half-container h-full overflow-y-hidden">
+            <AnimatedBox className="h-screen w-screen py-20 mobile-flex split-2">
+                <div className="half-container h-full overflow-y-hidden pl-20">
                     <SectionImage translateY={imageOneY} 
                         src={ExperienceContent.SectionOneImg}/>
 
@@ -131,7 +131,7 @@ const Experience = () => {
                         src={ExperienceContent.SectionOneImg}/>
                 </div>
                 <div
-                    className="half-container text-part overflow-y-hidden bg-white"
+                    className="half-container text-part overflow-y-hidden bg-white pr-20"
                 >
                     <div className="block label">
                         <ExperienceSVG />
