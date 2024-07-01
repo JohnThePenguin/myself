@@ -12,6 +12,7 @@ import useWindowSize from 'hooks/windowSize';
 import FullNameSVG from 'components/handwrites/fullName';
 import AnimatedBox from 'components/animations/animatedBox';
 import { AboutMeContentMobileOne, AboutMeContentMobileTwo } from 'components/contents/about';
+import BackToHome from 'components/backToHome';
 
 export default function AboutMobile() {
   const [progress, setProgress] = useState(0);
@@ -24,6 +25,7 @@ export default function AboutMobile() {
   };
   return (
       <div className='swiper-background'>
+        <BackToHome/>
         <SwiperSlide>
         <AnimatedBox className='swiper-back'><></></AnimatedBox>
 

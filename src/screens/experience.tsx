@@ -13,7 +13,7 @@ import ExperienceMobile from "./mobile/experience";
 const SectionImage = ({src, translateY} : {src: string, translateY: number}) => {
     return (
         <div className="animated-image" style={{
-            transform: `translateY(${translateY}px)`,
+            transform: `translateX(${translateY/2}px)`,
         }}>
             <img
                 className="image-me image-hover"
@@ -131,7 +131,7 @@ const Experience = () => {
                         src={ExperienceContent.SectionOneImg}/>
                 </div>
                 <div
-                    className="half-container text-part overflow-y-hidden"
+                    className="half-container text-part overflow-y-hidden bg-white"
                 >
                     <div className="block label">
                         <ExperienceSVG />

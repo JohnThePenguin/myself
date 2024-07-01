@@ -1,4 +1,4 @@
-import React, { ReactNode, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 
@@ -13,8 +13,8 @@ import 'styles/swiper-experience.css';
 import useWindowSize from 'hooks/windowSize';
 import AnimatedBox from 'components/animations/animatedBox';
 import AText from 'components/animations/animatedText';
-import AchievedSVG from 'components/handwrites/achieved';
-import ExperienceContent, { SectionsTexts } from 'components/contents/experience';
+import { SectionsTexts } from 'components/contents/experience';
+import BackToHome from 'components/backToHome';
 
 export default function TodayMobile() {
   const {size: {height}} = useWindowSize();
@@ -22,6 +22,7 @@ export default function TodayMobile() {
 
   return (
       <div className='swiper-background'>
+        <BackToHome/>
         <div className="swiper-container">
         <AnimatedBox className='swiper-back'><></></AnimatedBox>
 

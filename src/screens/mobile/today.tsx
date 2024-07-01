@@ -1,4 +1,4 @@
-import React, { ReactNode, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,12 +9,11 @@ import 'styles/swiper.css'
 
 // import required modules
 import useWindowSize from 'hooks/windowSize';
-import FullNameSVG from 'components/handwrites/fullName';
 import AnimatedBox from 'components/animations/animatedBox';
-import { AboutMeContentMobileOne, AboutMeContentMobileTwo } from 'components/contents/about';
 import AText from 'components/animations/animatedText';
 import { TodayText } from 'components/contents/today';
 import TodaySVG from 'components/handwrites/today';
+import BackToHome from 'components/backToHome';
 
 export default function TodayMobile() {
   const [progress, setProgress] = useState(0);
@@ -27,6 +26,7 @@ export default function TodayMobile() {
   };
   return (
       <div className='swiper-background'>
+        <BackToHome/>
         <SwiperSlide>
         <AnimatedBox className='swiper-back'><></></AnimatedBox>
 

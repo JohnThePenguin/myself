@@ -15,6 +15,7 @@ import { AboutMeContentMobileOne, AboutMeContentMobileTwo } from 'components/con
 import AText from 'components/animations/animatedText';
 import AchievedSVG from 'components/handwrites/achieved';
 import { AchievedText } from 'components/contents/achieved';
+import BackToHome from 'components/backToHome';
 
 export default function AchievedMobile() {
   const [progress, setProgress] = useState(0);
@@ -28,6 +29,7 @@ export default function AchievedMobile() {
 
   return (
       <div className='swiper-background'>
+        <BackToHome/>
         <SwiperSlide>
         <AnimatedBox className='swiper-back'><></></AnimatedBox>
 
