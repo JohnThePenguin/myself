@@ -25,8 +25,9 @@ const Achieved = () => {
         <main className="w-screen h-scalable bg-white relative flex overflow-hidden">
             <BackToHome/>
             <AnimatedBox className="h-screen w-screen p-20 mobile-flex split-2">
-                <div className="half-container">
+                <div className="half-container" style={{flexDirection: 'column'}}>
                     <img className="image-me image-hover" src="https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg"/>
+                    <span style={{fontSize: "0.7rem"}}>https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg</span>
                 </div>
                 <div className="half-container text-part overflow-y-hidden" ref={textPartRef}>
                     <div className="block label">

@@ -119,16 +119,16 @@ const Experience = () => {
                         src={ExperienceContent.SectionOneImg}/>
 
                     <SectionImage translateY={imageTwoY} 
-                        src={ExperienceContent.SectionOneImg}/>
+                        src={ExperienceContent.SectionTwoImg}/>
 
                     <SectionImage translateY={imageThreeY} 
-                        src={ExperienceContent.SectionOneImg}/>
+                        src={ExperienceContent.SectionThreeImg}/>
 
                     <SectionImage translateY={imageFourY} 
-                        src={ExperienceContent.SectionOneImg}/>
+                        src={ExperienceContent.SectionFourImg}/>
 
                     <SectionImage translateY={imageFiveY} 
-                        src={ExperienceContent.SectionOneImg}/>
+                        src={ExperienceContent.SectionFiveImg}/>
                 </div>
                 <div
                     className="half-container text-part overflow-y-hidden bg-white pr-20"

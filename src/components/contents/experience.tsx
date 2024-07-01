@@ -15,7 +15,7 @@ export const SectionsTexts = [
             "It is the biggest thing i have ever created",
             "Built in React Native and Express JS - Stinder"
         ],
-        image: "https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg",
+        image: "/experience/stinder.png",
     },
     {
         title: "Various projects for fun",
@@ -25,7 +25,7 @@ export const SectionsTexts = [
             "There was also some useful programs, or small experiences with developing Android app with Java",
             "Generally when I don't have idea what to do today, I think what what could I continue or start new "
         ],
-        image: "https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg",
+        image: "/experience/fun-stuff.png",
     },
     {
         title: "C++ Website",
@@ -35,7 +35,7 @@ export const SectionsTexts = [
             "In spite of lack of knowledge, it turned out to be good looking and well functioning",
             "Website had user accounts system and couple of sub-sites describing basics of C++ language"
         ],
-        image: "https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg",
+        image: "/experience/janinf-w-staszic.png",
     },
     {
         title: "Theoretical Informatics",
@@ -46,7 +46,7 @@ export const SectionsTexts = [
             "I liked it, i was not a master, but i would consider myself as alright in this field",
             "Creating something, that some one can use now gives me much more satisfaction"
         ],
-        image: "https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg",
+        image: "/experience/algorithms.png"
     },
     {
         title: "Advanced Projects",
@@ -55,7 +55,7 @@ export const SectionsTexts = [
             "I was working on things like product warehouse management app, hosting events website or kind of market app",
             "Taking care of more serious things, taught me a lot and also got me plenty of experience"
         ],
-        image: "https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg",
+        image: "/experience/spryte.png"
     },
 ]
 
