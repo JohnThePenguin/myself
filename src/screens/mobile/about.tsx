@@ -23,7 +23,11 @@ export default function AboutMobile() {
       <div className='swiper-background'>
         <BackToHome/>
         <SwiperSlide>
-        <AnimatedBox className='swiper-back'><></></AnimatedBox>
+        <AnimatedBox className='swiper-back'>
+          <span className='swiper-back-source'>
+            Contact: jj.ancuta@gmail.com
+          </span>
+        </AnimatedBox>
 
           <Swiper
             mousewheel={true}

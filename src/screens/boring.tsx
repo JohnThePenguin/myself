@@ -15,16 +15,18 @@ const BoringStuff = () => {
         <main className="w-screen h-scalable bg-white relative flex-center overflow-hidden">
             <BackToHome/>
             <AnimatedBox className="p-20 svg-child-10vh flex-center flex-col">
-                <AText>
+                <AText style={{textAlign: 'center'}}>
                     Design, Code, Graphics, Technical service and Handwritings by
                 </AText>
                 <AText style={{justifyContent: 'center', alignItems: 'center'}}>
                     <FullNameSVG/>
                 </AText>
-                <AText>
+                <AText style={{textAlign: 'center'}}>
                     Made in React 18
+                    <br/>
+                    jj.ancuta@gmail.com
                 </AText>
-            </AnimatedBox>
+                </AnimatedBox>
         </main>
     );
 };

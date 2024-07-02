@@ -34,8 +34,9 @@ const About = () => {
         <main className="w-screen h-scalable bg-white relative flex overflow-hidden">
             <BackToHome/>
             <AnimatedBox className="h-screen w-screen p-20 mobile-flex split-2">
-                <div className="half-container">
+                <div className="half-container" style={{flexDirection: 'column'}}>
                     <img className="image-me image-hover" src="/sunset.jpg"/>
+                    <span style={{fontSize: "0.7rem"}}>jj.ancuta@gmail.com</span>
                 </div>
                 <div className="half-container text-part">
                     <div className="text-part smaller" ref={textPartRef}>

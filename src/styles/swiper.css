@@ -57,6 +57,15 @@ width: 100vw;
 height: 100vh;
 
   padding: 0 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-back-source{
+  transform: translateY(-47vw);
+  font-size: 0.5em;
+  z-index: 100;
 }
 
 .swiper-v{

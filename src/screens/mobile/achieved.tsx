@@ -21,11 +21,20 @@ import ArrowDownSVG from 'components/handwrites/arrowDown';
 export const NextButton = ({hide} : {hide? : boolean}) => {
   const swiper = useSwiper();
 
+  const slideNext = () => {
+    try{
+      swiper.slideNext();
+    }
+    catch(error){
+      console.log("could not slide to next slide...");
+    }
+  }
+
   return (
     <div 
       className="mobile-swiper-next"
       style={{opacity: `${hide ? 0 : 1}`}}
-      onClick={() => swiper.slideNext()}>
+      onClick={slideNext}>
       <ArrowDownSVG/>
     </div>
   )
@@ -40,7 +49,11 @@ export default function AchievedMobile() {
         <BackToHome/>
         <SwiperSlide>
 
-        <AnimatedBox className='swiper-back'><></></AnimatedBox>
+        <AnimatedBox className='swiper-back'>
+          <span className='swiper-back-source'>
+            https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg
+          </span>
+        </AnimatedBox>
 
           <Swiper
             mousewheel={true}
@@ -69,7 +82,7 @@ export default function AchievedMobile() {
         </SwiperSlide>
       <style>{`
         .swiper-back{
-          background: url('/sunset.jpg') no-repeat center center;
+          background: url(https://www.staszic.waw.pl/media/gallery/szkola/photo.jpg) no-repeat center center;
           background-size: contain;
           background-origin: content-box;
         }

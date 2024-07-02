@@ -10,9 +10,9 @@ export const SectionsTexts = [
         content: [
             "While me and my friends were making up school council, we had an idea to create some big mobile app for school community",
             "And we have created it",
-            "App is posted on App Store and Apple Play, and at the peak time it had 200 active users across our high school only",
+            "App is posted on App Store and Google Play, and at the peak time it had 200 active users across our high school only",
             "Our team was made up of classmates, helping and learning from each other",
-            "It is the biggest thing I have ever created",
+            "It is one of the biggest thing I have ever created",
             "Built in React Native and Express JS - Stinder"
         ],
         image: "/experience/stinder.png",
@@ -22,7 +22,7 @@ export const SectionsTexts = [
         content: [
             "I have written a lot of different small projects",
             "I was having fun creating some games in C++ from Youtube videos",
-            "There was also some useful programs, or small experiences with developing Android app with Java",
+            "There was also some useful programs or small experiences with developing Android app with Java",
             "Generally when I don't have idea what to do today, I think what project could I start or improve"
         ],
         image: "/experience/fun-stuff.png",
@@ -30,8 +30,8 @@ export const SectionsTexts = [
     {
         title: "C++ Website",
         content: [
-            "In the first year, as school project I had to create a website",
-            "As someone who hadn't known anything, I chose to do it in standard HTML, PHP and js",
+            "In the first year, as one of school projects, I had to create a website",
+            "As someone who hadn't been so experienced, I chose to do it in standard HTML, PHP and JavasScript",
             "In spite of lack of knowledge, it turned out to be good looking and well functioning",
             "Website had user accounts system and couple of sub-sites describing basics of C++ language"
         ],
@@ -52,7 +52,7 @@ export const SectionsTexts = [
         title: "Advanced Projects",
         content: [
             "After gathering experience from small fun projects, I moved on to creating bigger services",
-            "I was working on things like product warehouse management app, hosting events website or kind of market app",
+            "I was working on things like product warehouse management app, hosting events website or sales app",
             "Taking care of more serious things, taught me a lot and also got me plenty of experience"
         ],
         image: "/experience/spryte.png"

@@ -31,11 +31,11 @@ export default function TodayMobile() {
             className="mySwiper2 swiper-v"
             direction={'vertical'}
             slidesPerView="auto"
-            speed={500}
+            speed={1000}
             spaceBetween={height/2.5}
             onSlideChange={(swiper: any) => {setActiveIndex(swiper.activeIndex)}}
           >
-            <NextButton hide={activeIndex == TodayText.length} />
+            <NextButton hide={activeIndex === TodayText.length} />
             <SwiperSlide style={{height: "30vh"}} className='first-slide'>
               <AnimatedBox className='svg1'>
                     <TodaySVG/>
@@ -51,7 +51,7 @@ export default function TodayMobile() {
         </SwiperSlide>
       <style>{`
         .swiper-back{
-          background: url('/sunset.jpg') no-repeat center center;
+          background: url('/today.png') no-repeat center center;
           background-size: contain;
           background-origin: content-box;
         }
