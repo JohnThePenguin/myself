@@ -10,9 +10,9 @@ export const SectionsTexts = [
         content: [
             "While me and my friends were making up school council, we had an idea to create some big mobile app for school community",
             "And we have created it",
-            "App is posted on App Store and Apple Play, and once we had 200 active users across out high school only",
-            "Our team was created of class mates, helping and learning from each other",
-            "It is the biggest thing i have ever created",
+            "App is posted on App Store and Apple Play, and at the peak time it had 200 active users across our high school only",
+            "Our team was made up of classmates, helping and learning from each other",
+            "It is the biggest thing I have ever created",
             "Built in React Native and Express JS - Stinder"
         ],
         image: "/experience/stinder.png",
@@ -20,38 +20,38 @@ export const SectionsTexts = [
     {
         title: "Various projects for fun",
         content: [
-            "I have written a lot of different small projects, usually not finished them",
+            "I have written a lot of different small projects",
             "I was having fun creating some games in C++ from Youtube videos",
             "There was also some useful programs, or small experiences with developing Android app with Java",
-            "Generally when I don't have idea what to do today, I think what what could I continue or start new "
+            "Generally when I don't have idea what to do today, I think what project could I start or improve"
         ],
         image: "/experience/fun-stuff.png",
     },
     {
         title: "C++ Website",
         content: [
-            "Once as school project I had to create website",
-            "As someone who hadn't known anything, i chose to do it in standard HTML, PHP and js",
+            "In the first year, as school project I had to create a website",
+            "As someone who hadn't known anything, I chose to do it in standard HTML, PHP and js",
             "In spite of lack of knowledge, it turned out to be good looking and well functioning",
             "Website had user accounts system and couple of sub-sites describing basics of C++ language"
         ],
         image: "/experience/janinf-w-staszic.png",
     },
     {
-        title: "Theoretical Informatics",
+        title: "Theoretical Computer Science",
         content: [
-            "Since 2020 i have stayed in constant touch with algorithmic programming",
+            "Since 2020 I have stayed in constant touch with algorithmic programming",
             "I have started multiple times in Polish Olympiad of Informatics",
             "While preparing, I was taught numerous algorithms and ideas and also learned kind of algorithmic thinking",
-            "I liked it, i was not a master, but i would consider myself as alright in this field",
-            "Creating something, that some one can use now gives me much more satisfaction"
+            "I liked it, I was not a master, but I would consider myself as alright in this field",
+            "Creating something practical that someone can use, gives me much more satisfaction"
         ],
         image: "/experience/algorithms.png"
     },
     {
         title: "Advanced Projects",
         content: [
-            "After gathering experience from small fun projects, i moved on to creating bigger services",
+            "After gathering experience from small fun projects, I moved on to creating bigger services",
             "I was working on things like product warehouse management app, hosting events website or kind of market app",
             "Taking care of more serious things, taught me a lot and also got me plenty of experience"
         ],

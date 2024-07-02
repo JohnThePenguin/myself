@@ -16,10 +16,13 @@ const BoringStuff = () => {
             <BackToHome/>
             <AnimatedBox className="p-20 svg-child-10vh flex-center flex-col">
                 <AText>
-                    Design, Code, Graphics, Technical service and Text content by
+                    Design, Code, Graphics, Technical service and Handwritings by
                 </AText>
                 <AText style={{justifyContent: 'center', alignItems: 'center'}}>
                     <FullNameSVG/>
+                </AText>
+                <AText>
+                    Made in React 18
                 </AText>
             </AnimatedBox>
         </main>

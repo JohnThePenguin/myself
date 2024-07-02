@@ -6,9 +6,9 @@ import "styles/content.css";
 const AboutMeContent = () => {
     return (
         <div className="text-content about-me">
-            <AText>Hi, i am Janek.</AText>
+            <AText>Hi, I am Janek.</AText>
             <AText>
-                I am 18 years old and month ago i have written polish matura
+                I am 18 years old and month ago I have written polish matura
                 exam, finishing high school.
             </AText>
             <AText>
@@ -20,7 +20,7 @@ const AboutMeContent = () => {
                 skatepark.
             </AText>
             <AText>
-                Since last classes of primary school, i have mainly focused on
+                Since last classes of primary school, I have mainly focused on
                 informatics. I love building my own projects, and working on
                 them with my friends.{" "}
             </AText>
@@ -35,9 +35,9 @@ const AboutMeContent = () => {
 export const AboutMeContentMobileOne = () => {
     return (
         <div className="text-content about-me">
-            <AText>Hi, i am Janek.</AText>
+            <AText>Hi, I am Janek.</AText>
             <AText>
-                I am 18 years old and month ago i have written polish matura
+                I am 18 years old and month ago I have written polish matura
                 exam, finishing high school.
             </AText>
             <AText>
@@ -56,7 +56,7 @@ export const AboutMeContentMobileTwo = () => {
                 skatepark.
             </AText>
             <AText>
-                Since last classes of primary school, i have mainly focused on
+                Since last classes of primary school, I have mainly focused on
                 informatics. I love building my own projects, and working on
                 them with my friends.
             </AText>
