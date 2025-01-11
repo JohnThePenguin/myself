@@ -1,6 +1,7 @@
 import AText from "components/animations/animatedText";
 
 export const AchievedText = [
+    "Currently, I am at the first year of Computer Science at the University of Warsaw at the Faculty of Mathematics and Information Science",
     "I attended to XIV Liceum Ogólnokształcącego im. Stanisława Staszica in Warsaw, which at this time, was the best high school in country",
     "My class profile was math and informatics",
     "In primary school, I was taking part basically in every math competition that was available, for example in polish versions of math kangaroo",

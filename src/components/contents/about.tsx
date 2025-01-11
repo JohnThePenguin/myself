@@ -8,8 +8,7 @@ const AboutMeContent = () => {
         <div className="text-content about-me">
             <AText>Hi, I am Janek.</AText>
             <AText>
-                I am 18 years old and month ago I have written polish matura
-                exam, finishing high school.
+                I am 19 years old and currently I study computer science at Warsaw University of Technology.
             </AText>
             <AText>
                 When I was younger, my interests was about math, sport and art.
@@ -37,8 +36,7 @@ export const AboutMeContentMobileOne = () => {
         <div className="text-content about-me">
             <AText>Hi, I am Janek.</AText>
             <AText>
-                I am 18 years old and month ago I have written polish matura
-                exam, finishing high school.
+                I am 19 years old and currently I study computer science at Warsaw University of Technology.
             </AText>
             <AText>
                 When I was younger, my interests was about math, sport and art.

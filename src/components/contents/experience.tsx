@@ -10,10 +10,11 @@ export const SectionsTexts = [
         content: [
             "While me and my friends were making up school council, we had an idea to create some big mobile app for school community",
             "And we have created it",
-            "App is posted on App Store and Google Play, and at the peak time it had 200 active users across our high school only",
+            "App is posted on App Store and Google Play, and at the peak time it had over 600 active users across Warsaw middle schools",
             "Our team was made up of classmates, helping and learning from each other",
             "It is one of the biggest thing I have ever created",
-            "Built in React Native and Express JS - Stinder"
+            "Right now, app is under reconstruction",
+            "Built in React Native and Express JS - Bangla"
         ],
         image: "/experience/stinder.png",
     },
