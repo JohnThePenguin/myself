@@ -20,7 +20,7 @@ const AboutMeContent = () => {
             </AText>
             <AText>
                 Since last classes of primary school, I have mainly focused on
-                informatics. I love building my own projects, and working on
+                informatics. I love building my own projects and working on
                 them with my friends.{" "}
             </AText>
             <AText>
@@ -55,7 +55,7 @@ export const AboutMeContentMobileTwo = () => {
             </AText>
             <AText>
                 Since last classes of primary school, I have mainly focused on
-                informatics. I love building my own projects, and working on
+                informatics. I love building my own project and working on
                 them with my friends.
             </AText>
             <AText>

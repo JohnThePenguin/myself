@@ -9,34 +9,14 @@ export const SectionsTexts = [
         title: "School app",
         content: [
             "While me and my friends were making up school council, we had an idea to create some big mobile app for school community",
-            "And we have created it",
+            // "And we have created it",
             "App is posted on App Store and Google Play, and at the peak time it had over 600 active users across Warsaw middle schools",
             "Our team was made up of classmates, helping and learning from each other",
-            "It is one of the biggest thing I have ever created",
+            // "It is one of the biggest thing I have ever created",
             "Right now, app is under reconstruction",
-            "Built in React Native and Express JS - Bangla"
+            // "Built in React Native and Express JS - Bangla"
         ],
         image: "/experience/stinder.png",
-    },
-    {
-        title: "Various projects for fun",
-        content: [
-            "I have written a lot of different small projects",
-            "I was having fun creating some games in C++ from Youtube videos",
-            "There was also some useful programs or small experiences with developing Android app with Java",
-            "Generally when I don't have idea what to do today, I think what project could I start or improve"
-        ],
-        image: "/experience/fun-stuff.png",
-    },
-    {
-        title: "C++ Website",
-        content: [
-            "In the first year, as one of school projects, I had to create a website",
-            "As someone who hadn't been so experienced, I chose to do it in standard HTML, PHP and JavasScript",
-            "In spite of lack of knowledge, it turned out to be good looking and well functioning",
-            "Website had user accounts system and couple of sub-sites describing basics of C++ language"
-        ],
-        image: "/experience/janinf-w-staszic.png",
     },
     {
         title: "Theoretical Computer Science",
@@ -50,13 +30,39 @@ export const SectionsTexts = [
         image: "/experience/algorithms.png"
     },
     {
-        title: "Advanced Projects",
+        title: "Inventory Management System",
         content: [
             "After gathering experience from small fun projects, I moved on to creating bigger services",
-            "I was working on things like product warehouse management app, hosting events website or sales app",
-            "Taking care of more serious things, taught me a lot and also got me plenty of experience"
+            "Me and my friend made a huge and complex web service for controlling medical products in warehouse",
+            "Product has been written for small company, which uses it still today",
+            "We still maintain service and develop new features there",
+            "Some of functions are developing devices, clients, users, permission groups and much more",
+            "App has a well built integration with excel for imports and exports"
         ],
-        image: "/experience/spryte.png"
+        image: "/experience/inventory.png"
+    },
+    {
+        title: "Work as administrator at high school",
+        content: [
+            "After being a younger assistance, I become a formal network administrator at XIV high school named after Stanisław Staszic in Warsaw",
+            "I have worked there since Octomber 2024, studying in parallel",
+            "My job is to maintain currently working services, and create new ones",
+            "Generally I must provide that students and teachers are able to work with each other comfortable"
+        ],
+        image: "/experience/admin.png",
+    },
+    {
+        title: "Company with friend",
+        content: [
+            "With my good friend we managed together many various projects",
+            "We have created things like: ",
+            " - Previously mentioned inventory management system",
+            " - Pack of apps, for copmpany and its clients, including sales mobile app, price monitoring website and management panel",
+            " - Web service for managing court trial simulations for high school students",
+            "And many other, including AIs",
+            "More at spryte.dev"
+        ],
+        image: "/experience/spryte.png",
     },
 ]
 
